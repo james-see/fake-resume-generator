@@ -11,6 +11,8 @@ from os.path import expanduser
 import random
 import uuid
 from time import sleep
+import os
+
 # globals
 
 URL = 'https://indeed.com'
@@ -54,13 +56,29 @@ def main():
     resume_links = get_links()
     # exit('works so far')
     for link in resume_links:
-        sleep(random.randint(1, 10))
+        sleep(random.randint(1, 3))
         r = requests.get(URL+link)
+        soup = BeautifulSoup(r.text)
+        # kill all script and style elements
+        for script in soup(["script", "style"]):
+            script.extract()    # rip it out
+
+        text = soup.get_text()
+        # break into lines and remove leading and trailing space on each
+        lines = (line.strip() for line in text.splitlines())
+        # break multi-headlines into a line each
+        chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+        # drop blank lines
+        justtext = '\n'.join(chunk for chunk in chunks if chunk)
         if not os.path.exists("{}/{}".format(homepath, "resumes")):
             os.makedirs("{}/{}".format(homepath, "resumes"))
         uniqq = uuid.uuid1()
         with open("{}/{}/{}.html".format(homepath, "resumes", uniqq), 'w') as f:
             f.write(r.text)
+            if args.verbose:
+                print('Saved {}.html successfully.'.format(uniqq))
+        with open("{}/{}/{}.txt".format(homepath, "resumes", uniqq), 'w') as f:
+            f.write(justtext)
 
 # main
 
