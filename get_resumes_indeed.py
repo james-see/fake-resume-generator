@@ -4,7 +4,7 @@ Gather resumes for fun and profit.
 '''
 
 # imports
-
+import hashlib
 import requests
 from bs4 import BeautifulSoup
 import argparse
@@ -59,7 +59,7 @@ def main():
     for link in resume_links:
         sleep(random.randint(1, 3))
         r = requests.get(URL+link)
-        soup = BeautifulSoup(r.text)
+        soup = BeautifulSoup(r.text, 'html.parser')
         # kill all script and style elements
         for script in soup(["script", "style"]):
             script.extract()    # rip it out
@@ -73,12 +73,22 @@ def main():
         justtext = '\n'.join(chunk for chunk in chunks if chunk)
         if not os.path.exists("{}/{}".format(homepath, "resumes")):
             os.makedirs("{}/{}".format(homepath, "resumes"))
-        uniqq = uuid.uuid1()
-        with open("{}/{}/{}.html".format(homepath, "resumes", uniqq), 'w') as f:
+        # uniqq = uuid.uuid1()
+        # replaced uuid with hash of content
+        hash = hashlib.sha1()
+        hash.update(justtext.encode('utf8'))
+        # print(hash.hexdigest())
+        # print(hash.hexdigest()[:10])
+        # check uniqueness
+        if os.path.isfile("{}/{}/{}.html".format(homepath, "resumes", hash.hexdigest())):
+            if args.verbose:
+                print('{} already exists'.format(hash.hexdigest()))
+            continue
+        with open("{}/{}/{}.html".format(homepath, "resumes", hash.hexdigest()), 'w') as f:
             f.write(r.text)
             if args.verbose:
-                print('Saved {}.html successfully.'.format(uniqq))
-        with open("{}/{}/{}.txt".format(homepath, "resumes", uniqq), 'w') as f:
+                print('Saved {}.html successfully.'.format(hash.hexdigest()))
+        with open("{}/{}/{}.txt".format(homepath, "resumes", hash.hexdigest()), 'w') as f:
             f.write(justtext)
 
 # main
