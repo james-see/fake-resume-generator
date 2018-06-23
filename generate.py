@@ -51,6 +51,35 @@ standard_sections = [
     'library',
     'design'
     ]
+indeed_stopwords = [
+    'indeed',
+    'June',
+    'July',
+    'August',
+    'September',
+    '2018',
+    '2017',
+    '2016',
+    '2015',
+    'Indeed',
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'Updated:',
+    'Linkshttps://github',
+    'http://',
+    'http:',
+    'Resume',
+    'Forward',
+    'Save',
+    'Links',
+    'github',
+    'https://www',
+    'Work Experience',
+    'relocate:'
+]
 
 # arguments handler
 parser = argparse.ArgumentParser(description="Process documents to make them generative")
@@ -64,6 +93,11 @@ if args.verbose and not args.silent:
     print("verbosity turned on")
 
 # functions
+
+def remove_punctuation(input_string):
+    for item in indeed_stopwords:
+        input_string = input_string.replace(item, ' ')
+    return input_string
 
 def parse_indeed_sections(resume_file):
     '''
@@ -83,6 +117,7 @@ def parse_indeed_sections(resume_file):
                         continue
             if args.verbose:
                 print(neckdown)
+            neckdown = remove_punctuation(neckdown)
             indeeddict[item] = neckdown
             with open('data/{}.txt'.format(item),'a') as f:
                 f.write("{}\n".format(indeeddict[item]))

@@ -76,7 +76,10 @@ parser.add_argument("-v", "--verbose", help="increase output verbosity",
 parser.add_argument("-s", "--silent", help="silent running server mode, no output to screen",
                     action="store_true")
 parser.add_argument("-f", "--folder", help="folder location", default="resumes")
-parser.add_argument("-c", "--countermax", help="max number of lines for markov to write", default=3)
+parser.add_argument("-c", "--countermax", help="max number of lines for markov to write", default=3, type=int)
+parser.add_argument("-n", "--namer", help="Full name to use for top of resume", default="Joe Smith")
+parser.add_argument("-e", "--emailer", help="email to use for contact info for resume", default="joe.smith@blackhole.sun" )
+parser.add_argument("--font", help="font-selector either Times, Georgia, or Courier", default='monospace')
 args = parser.parse_args()
 if args.verbose and not args.silent:
     print("verbosity turned on")
@@ -103,10 +106,10 @@ def pack_it_in(data, counter_max):
         mk = markovgen.Markov(readytext.split('.'))
         counter = 1
         while counter < counter_max:
-            line = '\n' + mk.generate_markov_text()
+            line = '<br>' + mk.generate_markov_text()
             newtext.append(line)
             counter = counter + 1
-        data[item] = ''.join(newtext)
+        data[item] = ' '.join(newtext)
         if args.verbose:
             print(data[item])
     return data
@@ -114,11 +117,11 @@ def pack_it_in(data, counter_max):
 
 def gen_text(data, name, email):
     with open('fresh_resume.html', 'w') as f:
-        f.write('<!DOCTYPE html><head><style>body {font-family: monospace;}'+cssdefault+'</style></head><body>')
+        f.write('<!DOCTYPE html><head><style>body {font-family: '+args.font+'}'+cssdefault+'</style></head><body>')
         f.write('<div><h1>'+name+'</h1></div>')
         f.write('<h3>'+email+'</h3>')
         for k, v in data.items():
-            f.write('<h2>{}</h2><br>'.format(k))
+            f.write('<h2>{}</h2>'.format(k))
             f.write('<p>{}</p>'.format(v))
         f.write('</body></html>')
 
@@ -128,7 +131,10 @@ def get_name():
     return name, email
 
 def main():
-    name, email = get_name()
+    if args.namer == 'Joe Smith':
+        name, email = get_name()
+    else:
+        name, email = args.namer, args.emailer
     resumedict = get_resume_parts() # load up the dict with the right keys
     alldata = pack_it_in(resumedict, args.countermax) # load up the keys with items
     gen_text(alldata, name, email)

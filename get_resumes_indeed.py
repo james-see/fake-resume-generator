@@ -64,7 +64,10 @@ def main():
         for script in soup(["script", "style"]):
             script.extract()    # rip it out
 
+        #text = soup.get_text()
+        # break into lines and remove leading and trailing space on each
         text = soup.get_text()
+
         # break into lines and remove leading and trailing space on each
         lines = (line.strip() for line in text.splitlines())
         # break multi-headlines into a line each
