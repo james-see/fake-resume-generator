@@ -1,3 +1,17 @@
+
+
+CNCF Kubernetes Organization
+
+    to Present
+
+Code contributor to Kubernetes and KOPS.
+
+
+
+
+
+
+
  and mount points for NFS support;
 
 • Management of user accounts, files and directory permissions, and securing UNIX systems to match industry best practices;
@@ -338,6 +352,71 @@ other officers to see their tasks.
 
 
 
+, Volume 
+
+
+African American Task Group
+
+  to Present
+
+Asian Pacific Professional Network
+
+  to Present
+
+Connect1NG
+
+  to Present
+
+Generation to Generation
+
+  to Present
+
+greeNG
+
+  to Present
+
+Native American Caucus
+
+  to Present
+
+Northrop Grumman Womens International Network
+
+  to Present
+
+One Adelante
+
+  to Present
+
+Pride In Diversity Alliance
+
+  to Present
+
+Source for Parenting Resources, Opportunities, Understanding and Teamwork
+
+  to Present
+
+Veterans, Employees and Reservists Inspired to Act and Serve
+
+  to Present
+
+Victory Over Impairment & Challenge Enterprise
+
+  to Present
+
+Mobile Community of Practice
+
+  to Present
+
+Cloud Community of Practice
+
+  to Present
+
+
+
+
+
+
+
 , and permission for each groups and users.
 
 • Installed and configured Sudo for users to access the root privileges.
@@ -423,6 +502,206 @@ Programming Languages
 
 
 
+ and Logical Volumes, extended logical volumes for the system growth needs using Logical Volume Manager (LVM).
+
+• Installed and configured Solaris 10 with SunOS version 5.9 with iPlanet Directory server, Resource manager, Solaris volume manager, Multipath I IPMP and extended file attributes features.
+
+• Installation, Configuration and troubleshooting of system security applications like SUDO, SSH, Power Broker and eTrust.
+
+Willing to   Anywhere
+ 
+
+Linux Engineer
+OCLC
+-
+Columbus, OH
+-
+
+December   to Present
+
+Responsibilities:
+
+• RedHat Satellite Minor Version Update from 6.2.11 to 6.2.13, Migration of RedHat Satellite 6.2.13 from RHEL 6.9 TO RHEL 7.4, Registering to Red hat Subscription Management (RHSM), Add necessary subscriptions, Review existing content Host Registrations, Register New Content hosts, selecting Repositories, setting Sync time, Freezing &amp; Publishing New Versions of REPO Data, Refreshing Subscription Manager on Hosts, Security Errata and patch Maintenance of new and existing Servers, Resolving any dependencies, Linux Red Hat Subscription Manager maintenance and local repo setup
+
+• Performing Patch Management through Ansible. Wrote Playbooks, modules as required.
+
+• Managed RedHat Satellite server patch management system
+
+• Performing LDAP account management.
+
+• Queried and managed software packages with Red Hat Package Manager (RPM) in the system, and wrote RPM spec files.
+
+• Responsible for data management using Red hat and CentOS utilities for archiving, compression backup and restore.
+
+• Responsible for installation, configuration, network security and overall maintenance of Sun Red Hat and Linux Red Hat Servers
+
+• Created system security supporting multi-tier software delivery system by utilizing Active Directory and Kerbero.
+
+• Wrote new security policies for Saline and maintained it for enhanced access control; performed debugging on SELinux issues.
+
+• Supporting system users and troubleshooting system issues. Document solutions for future reference.
+
+• Participating in root-cause analysis of recurring issues, system backup and security setup.
+
+Environment: RedHat Enterprise Linux  &amp; 7.4, RedHat Satellite 6.2.13, VMware ESXi, Ansible, Open LDAP.
+
+Linux Engineer
+AutoZone Inc
+-
+Memphis, TN
+-
+
+    to November  
+
+Responsibilities:
+
+• Maintain a secure hosting environment with latest certified Prism-CMS software, security patches, and software updates and upgrades to database, and application tiers.
+
+• Activities includes user administration; startup and shutdown scripts; crontabs, file system maintenance, backup scripting and automation using Perl, shell scripting (bash, ksh) for Red Hat Linux systems.
+
+• Implementation and administration of VMware ESXi 4.x, 5.x, vCenter for running Redhat Linux, windows Servers on Production and Development.
+
+• Administration of 1000 + RHEL 5.x, 6.2 and 6.3 servers which includes installation, testing, tuning, upgrading and loading patches, troubleshooting both physical and virtual server issues.
+
+• Involved in meetings with Dev managers to Create, manage and maintain the SCM Plan, standards, and procedures
+
+• Create templates, cloning Linux Virtual Machines and migrating servers between ESXi hosts.
+
+• Configured and maintained LINUX Logical Volume Manager (LVM).
+
+• Effective use of LVM disk Management tool to Create, extend Shrink the Logical volumes, File Systems on RHEL.
+
+• Creation of Volumes and file systems on SAN disks using Redhat LVM and VERITAS Volume Manager.
+
+• Activities include user administration, startup and shutdown scripts, crontabs, file system maintenance and backup scripting and automation using shell scripting (BASH, KSH) and Perl for RedHat Linux systems
+
+• Provide support for JBoss 5.x and apache 2.0 application for an operation related to installation and configuration.
+
+• Draft shell scripts for automated installations and to extract logs.
+
+• Work with storage team and application team to ensure the storage allocation and design is done at initial construction time.
+
+• Work with Database administrators to tune kernel for Oracle installations on Linux.
+
+• Perform Veritas Net backup troubleshooting using remote tools and commands.
+
+• Monitor the systems CPU, memory, IDE disks, disk controllers, RAID, RAID controllers, file systems, and network parameters using NAGIOS system monitoring tools and BMC performance management tools.
+
+• Integrate more than 500 Linux servers to authenticate using Windows Active Directory using Winbind and Samba.
+
+• Manage DNS for external and internal domain &amp; Send mail Relay Server for outgoing mails.
+
+• Prepare servers for Oracle RAC installation which includes tuning the kernel, agent installation, adding NAS storage on 2, 3, 4 node clusters.
+
+• Design Firewall rules for new servers to establish communication with application, Oracle 10g servers.
+
+• Responsible for managing the Puppet Automation tool including installation, deployment, trouble shooting and updating.
+
+• Set up network environments using TCP NIS, NFS, DNS, SNMP agents, DHCP and Proxy.
+
+• Work with engineering team to resolve tickets related to engineering issues like firewall change requests.
+
+• Install AUTOSYS to schedule application jobs.
+
+• Generate detailed documents and reports on issues and solutions for future reference.
+
+Linux Administrator Engineer
+Metropolitan Utilities District
+-
+Omaha, NE
+-
+
+    to    
+
+Responsibilities:
+
+• Linux Support - RHEL Satellite 6.1.8 setup, Red hat Subscription Management (RHSM), Review existing content Host Registrations, Register New Content hosts, selecting Repositories, setting Sync time, Freezing &amp; Publishing New Versions of REPO Data, Refreshing Subscription Manager on Hosts, Security Errata and patch Maintenance of new and existing Servers, Resolving any dependencies, Troubleshooting any errors during Patching, Logical Volume Management (LVM), Common Unix Print Server (CUPS), OpenSSH Secure Shell (SSH), Name Service Switch (nsswitch), Samba file server (CIFS) &amp; Setting up Monitoring using Nagios xi.
+
+• Linux Red Hat Subscription Manager maintenance and local repo setup
+
+• Register RHEL 5 &amp; 6 hosts to Red Hat network using subscription manager
+
+• Performed Patching and upgrades (release), on stand-alone servers (using single user mode), and live upgrade of servers in production and Linux using YUM update / RPM manager from repository or Redhat subscription management service (RHSM).
+
+• Automated the front-ends platform into highly scalable, consistent, repeatable infrastructure using high degree of automation using Chef, Jenkins, and Cloud Formation.
+
+Implemented Continuous Integration (CI) using Jenkins, Git from scratch.
+
+• Implemented &amp; maintained the branching and build strategies utilizing GIT and STASH.
+
+• Responsible for designing and deploying Source Code Management (SCM) process and procedures.
+
+• Managed Redhat Satellite server patch management system
+
+• Integrated GIT into Jenkins to automate the code check-out process.
+
+• Responsible for design and maintenance of the GIT Repositories, views, and the access control strategies.
+
+• Configured and maintained Jenkins to implement the CI process and integrated the tool with Ant and Maven to schedule the builds.
+
+• For every release collected the code from Perforce and Deployed on QA, and Production Servers using Apache Ant and Unix Shell scripts.
+
+• Carried Deployments and builds on various environments using continuous integration tool Jenkins.
+
+• Maintained build related scripts developed in shell for Maven builds. Created and modified build configuration files including POM.xml.
+
+• Managed the software configurations using Puppet, Dashboard and Puppet DB for configuration management to existing infrastructure.
+
+• Expert in User Management and Plugin Management for Jenkins.
+
+• Configured kickstart server and updating patches to the servers using Redhat Satellite server.
+
+• Worked on Puppet and Chef Configuration management tools.
+
+• Create puppet modules to manage configurations and implemented them on agents.
+
+• Creating new groups in RedHat Satellite server and adding servers to configured groups
+
+• Performed SCM compliance reviews on configuration items to be issued to testing and production environment.
+
+• Designed and implemented GIT metadata including elements, labels, attributes, triggers and hyperlinks.
+
+• Managing and fixing Inactive, Out of date, Ungrouped and Duplicate systems in RedHat Satellite
+
+• Red Hat Satellite for patching, scheduling jobs and other tasks
+
+• Wrote and Maintained SCM policies and processes.
+
+• Updating patches to keep servers updated against bugs present in the operating system using Red Hat Satellite Server, yum, etc.
+
+• Update Maven scripts to use Artifactory repo instead of local repositories.
+
+• Installed and configured GIT and GITHUB. Implemented pre and post hooks in GIT.
+
+• Implemented and maintained the branching and build strategies utilizing GIT.
+
+• Build servers using Kick Start, Red Hat Satellite Server, and VSphere Client.
+
+• Worked with Red Hat Satellite Server which is used to push changes across various servers simultaneously.
+
+• Patching close to 150+ RHEL Servers from 6.5 to 6.8 across Sandbox, Dev, Base, QA, Pre-Prod &amp; Production environments.
+
+• Work with VCOPS, vSphere and VMWare ESX taking care of the virtual machines that run Linux.
+
+• Worked on variety of Linux platforms Red Hat Linux 5 &amp; Solaris which includes installation, configuring and maintenance of applications on this environment.
+
+• Used Logical Volume Manager for the management of Volumes including creation of physical and logical volumes on Linux
+
+• Worked on User administration setup, maintaining account, Monitor system performance.
+
+Environment: Redhat Enterprise Linux 4.x Solaris 8/ 9 Tivoli Storage Manager, VMware ESX5, Tivoli Net backup, and Websphere, Subversion, GIT, GITHUB, Jenkins, Maven, Puppet, ANT, Nagios, Docker, Selenium, windows 2008 R2 &amp; 2008 servers, Windows 2003, IIS 7.0 &amp; 7.5, HPC7000 &amp; C6000.
+
+Linux Administrator/ Devops Engineer
+Huntington National Bank
+-
+Columbus, OH
+-
+
+    to    
+
+Responsibilities:
+
+• Support the Business Data analysis team in analyzing user credentials data, subsequently creating Roles, Identity and Resources 
  and mount points for NFS support;
 
 * Management of user accounts, files and directory permissions, and securing UNIX systems to match industry best practices;

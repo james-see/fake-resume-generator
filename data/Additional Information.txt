@@ -1930,6 +1930,42 @@ IDE's VI, Eclipse, Xcode, Sublime Text, Notepad++
 
 
 
+TECHNICAL PROFICIENCIES:
+
+Operating Systems Linux (RedHat 5 Sun Solaris (10 Ubantu, IBM AIX 5.x, 6.1, 7.1 Windows […] Server, VMWARE ESX
+
+Hardware
+
+Dell PowerEdge Series, ATG 10.2, HP DL Series servers, HP Blade, Sun Fire Servers - E25k, E15k, 12k, E280R, E480R, V240, 420R, V440, V480, V490, V880, V890 and 4800
+
+Data Centre Servers - E250, E450, E3000 and E3500
+
+Tape Libraries - Sun StorEdge […] L180 and Storagetek's 9840
+
+A Fibrechannel
+
+Arrays - Sun StorEdge 3130, […] EMC DMX 800 and 1000
+
+Scripting Shell scripting, Python, PERL, C, C++, JEE
+
+Networking TCP DNS, NFS, NIS, SSH, DHCP, SMTP, Telnet, Netstat, WINS, Cisco Routers / Switches and LAN
+
+Tools Sun Cluster 3.2, VERITAS NetBackup 6.0, VERITAS Storage Foundation Suite, Solaris Volume Manager, sendmail
+
+Third Party Software VERITAS Volume Manager, EMC Storage, RAID Technologies, SSL, Double-Take, BMC Blade Logic.
+
+Web Technologies Apache 2.0, WebLogic 8.1 WebSphere, JBoss, IPlanet, IIS, HIS.
+
+Backup Management: 4.x Ufsdump, Ufsrestore, tar, cpio, dd, Tivoli
+
+
+
+
+
+
+
+
+
 • Programming Languages and frameworks: Python, Golang, Scikit Learn, Numpy, Pandas, Jupyter, TensorFlow, Keras, SQL, Selenium WebDriver, JavaScript, Ansible, SQL, Flask, HTML, JQuery, CSS, XML, XSLT.
 
 • IP Networking Technologies Used: Ubuntu MAAS, PXE, Linux IP Tables, Cisco IOS, IPTV, OSPF, EIGRP, CWMP, VLAN Switching, Multicast routing (SSM or PIM), and the OSI layers 3-7, Wireshark, Smarbits, Ixia, Satellite IRDs, Reliable Multicast.
@@ -4171,6 +4207,34 @@ Driving license of "B C D1 D CE" categories (cars, trucks, vans, buses and truck
 PERSONAL FEATURES
 
 I guarantee discipline, skill to communicate, purposefulness, decency. The desire to work is present. Any affair I try to bring to an end. I am punctual, industrious, not conflict. The sense of responsibility is present. I like the new acquaintances, new contacts.
+
+
+
+
+
+
+
+
+
+SKILLS
+
+Operating Systems
+
+Linux (Red Hat 4.x, 5.x, 6.x, 7.x), CentOS 5 Fedora, Ubuntu, Sun Solaris […] IBM AIX 5.x, 6.1, HP-UX 11.xx, 11iv3, Windows NT4.0, Windows […] Open VMS
+
+Hardware
+
+HP […] G8 Sun Fire Servers - […] E280R, E480R, V240, 420R, V440, V480, V490, […] 4800, E6900 and E2900. IBM - F-SERIES AND P-SERIES, IBM RS6000. Data Centre Servers - E250, E450, E3000 and E3500, […] T5120.
+
+Tools Nagios, Ansible,Chef, Cacti, F5, HP SIM, Puppet, IpTables.
+
+Languages Shell scripting, Perl, Python
+
+Databases Oracle […] MYSQL, DB2
+
+Networking TCP DNS, NFS, NIS, SSH, DHCP, Cisco Routers / Switches and LAN
+
+Web Technologies Apache, Tomcat, JBoss, Web sphere, Weblogic
 
 
 

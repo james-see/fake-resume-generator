@@ -141,8 +141,6 @@ def parse_indeed_sections(resume_file):
                 neckdown = resumetext.split(item)[1] # first step, remove crap from before heading
                 if "Additional Information" in neckdown:
                     neckdown.split('Additional Information')[0]
-                else:
-                    break
             if item == "Additional Information":
                 neckdown = resumetext.split(item)[1] # first step, remove crap from before heading
             # final cleanup
