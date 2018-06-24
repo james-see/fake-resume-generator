@@ -37,7 +37,7 @@ def get_it(urltograb):
             if args.verbose:
                 print(item.text.split(' Jobs')[0])
             # write to a list asshole
-            roles_list.append(item.text.split(' Jobs')[0])
+            roles_list.append(item.text.split(' Jobs')[0].strip())
         else:
             continue
     # pickle that shit

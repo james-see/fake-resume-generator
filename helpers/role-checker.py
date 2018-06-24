@@ -7,6 +7,11 @@ import markovgen
 import argparse
 import cv2
 
+# globals
+
+OKGREEN = '\033[92m'
+ENDC = '\033[0m'
+
 # arguments handler
 parser = argparse.ArgumentParser(description="Process documents to make them generative")
 parser.add_argument("-v", "--verbose", help="increase output verbosity",
@@ -24,23 +29,23 @@ def generate_role(roles):
     '''
     Generate role on keypress.
     '''
-    while True:
-        input('press any key to generate another...\n')
-        k = cv2.waitKey(1) & 0xFF
-        # press 'q' to exit
-        if k == ord('q'):
-            break
-        else:
-            mk = markovgen.Markov(roles)
-            newrole = mk.generate_markov_text()
-            print('Mr Markov offers role: {}'.format(newrole))
-            input('press any key to generate another...\n')
+    i = 'yes'
+    mk = markovgen.Markov(roles)
+    while i != 'q':
+        newrole = mk.generate_markov_text()
+        mk.feed(newrole)
+        print('Mr Markov offers role: '+OKGREEN+'{}'.format(newrole)+ENDC)
+        i = input('press any key to generate another role or "q" to exit...\n')
+        print(mk.available_seeds())
     return
 
 
 def main():
     with open('../data/ROLES.pickle', 'rb') as f:
         roles = pickle.load(f)
+        if "Assault Vehicle Crew Member" in roles:
+            print('yes')
+            exit()
     generate_role(roles)
 
 

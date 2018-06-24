@@ -127,11 +127,18 @@ def pack_it_in(data, counter_max):
 
 
 def gen_text(data, name, email):
+    with open('data/ROLES.pickle', 'rb') as f:
+        roles = pickle.load(f)
+    mkroles = markovgen.Markov(roles)
+    newrole = mkroles.generate_markov_text()
     with open('fresh_resume.html', 'w') as f:
         f.write('<!DOCTYPE html><head><style>h2 { text-decoration: underline; } body {font-family: '+args.font+'}'+cssdefault+'</style></head><body>')
         f.write('<div id="wrapper" style="text-align: center;"><div style="display:inline-block; margin-right:15px;"><h1>'+name+'</h1></div><div style="display:inline-block"><h2>'+email+'</h2></div></div>')
         for k, v in data.items():
             f.write('<h2>{}</h2>'.format(k))
+            # add markov new role from roles pickle above
+            if k == 'Work Experience':
+                f.write('<p>{}</p>'.format(newrole))
             f.write('<p>{}</p>'.format(v))
         if args.group:
             f.write('<h2>Groups</h2>')
