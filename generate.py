@@ -5,6 +5,7 @@ from os.path import expanduser
 import os
 import argparse
 import re
+from subprocess import call
 
 # globals
 pattern = re.compile(r'([A-Z].\w+\:)')
@@ -88,6 +89,7 @@ parser.add_argument("-v", "--verbose", help="increase output verbosity",
 parser.add_argument("-s", "--silent", help="silent running server mode, no output to screen",
                     action="store_true")
 parser.add_argument("-f", "--folder", help="folder location", default="resumes")
+parser.add_argument("-e", "--examine", help="examine mode allows for altering and troubleshooting parsing of html", action="store_true")
 args = parser.parse_args()
 if args.verbose and not args.silent:
     print("verbosity turned on")
@@ -97,6 +99,7 @@ if args.verbose and not args.silent:
 def remove_punctuation(input_string):
     for item in indeed_stopwords:
         input_string = input_string.replace(item, ' ')
+    [line for line in input_string.split('\n') if line.strip() != '']
     return input_string
 
 def parse_indeed_sections(resume_file):
@@ -108,16 +111,47 @@ def parse_indeed_sections(resume_file):
     for item in indeed_sections:
         neckdown = ''
         if item in resumetext:
-            neckdown = resumetext.split(item)[1] # first step, remove crap from before heading
-            if any(section in neckdown for section in indeed_sections):
-                #if any(section in neckdown for section in indeed_sections):
-                for section in indeed_sections:
-                    try: neckdown.split(section)[0]
+            if item == "Work Experience":
+                neckdown = resumetext.split(item)[1] # first step, remove crap from before heading
+                if "Education" in neckdown:
+                    neckdown.split('Education')[0]
+                else:
+                    neckdown.split('Skills')[0]
+            if item == "Education":
+                neckdown = resumetext.split(item)[1] # first step, remove crap from before heading
+                if "Skills" in neckdown:
+                    neckdown.split('Skills')[0]
+                else:
+                    try:
+                        neckdown.split('Groups')[0]
                     except:
-                        continue
-            if args.verbose:
-                print(neckdown)
+                        neckdown.split('Additional Information')[0]
+                    finally:
+                        break
+            if item == "Skills":
+                neckdown = resumetext.split(item)[1] # first step, remove crap from before heading
+                if "Groups" in neckdown:
+                    neckdown.split('Groups')[0]
+                else:
+                    try:
+                        neckdown.split('Additional Information')[0]
+                    except:
+                        break
+            if item == "Groups":
+                neckdown = resumetext.split(item)[1] # first step, remove crap from before heading
+                if "Additional Information" in neckdown:
+                    neckdown.split('Additional Information')[0]
+                else:
+                    break
+            if item == "Additional Information":
+                neckdown = resumetext.split(item)[1] # first step, remove crap from before heading
+            # final cleanup
             neckdown = remove_punctuation(neckdown)
+            if args.verbose:
+                call('clear')
+                print(item,neckdown)
+            if args.examine:
+                input("Press Enter to continue...")
             indeeddict[item] = neckdown
             with open('data/{}.txt'.format(item),'a') as f:
                 f.write("{}\n".format(indeeddict[item]))
@@ -163,7 +197,6 @@ def identify_sections(resume_file):
     #sections = resumetext.split(':')
 
 
-
 def get_sentences(sample_folder):
     '''
     Get training data
@@ -203,7 +236,6 @@ def main():
             if i > 100:
                 break
     
-
 
 # main
 

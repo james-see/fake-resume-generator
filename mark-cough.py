@@ -1,7 +1,7 @@
 '''
 Generate markov chains resume
 '''
-
+import pickle
 import markovgen
 import argparse
 
@@ -67,6 +67,14 @@ indeed_sections = [
     'Additional Information'
 ]
 
+pickles = [
+    'education',
+    'groups',
+    'skills',
+    'other_info',
+    'workexp'
+]
+
 resumeparts = dict()
 
 # arguments handler
@@ -101,9 +109,10 @@ def pack_it_in(data, counter_max):
     '''
     for item in indeed_sections:
         newtext = []
-        with open('data/{}.txt'.format(item), 'r') as f:
-            readytext = f.read()
-        mk = markovgen.Markov(readytext.split('.'))
+        with open('data/{}.pickle'.format(item), 'rb') as f:
+            readytext = pickle.load(f)
+        print(readytext)
+        mk = markovgen.Markov(readytext)
         counter = 1
         while counter < counter_max:
             line = '<br>' + mk.generate_markov_text()

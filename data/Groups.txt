@@ -1,91 +1,3 @@
-, and Logical Volumes).
-
-• Management of system logs (rsyslog server), system automated tasks (cron jobs).
-
-• Implementation of file transfer systems using FTP, NFS, and SSH (SCP).
-
-• Configuration and Implementation Firewall/IPtables rules on new servers.
-
-• Experience in network monitoring and performance management tools.
-
-• Administration of HTTP, DNS, DHCP, NFS Servers
-
-• Maintenance of current infrastructure technologies, timing and features of upcoming releases.
-
-• Operations enhancement by identifying areas to be improved and documenting the environment and processes.
-
-• Performance of other systems administration duties as project work and operational necessities require.
-
-Build and Release Engineer
-Cyient
--
-Hyderabad, Telangana
--
-
-  2012 to   2013
-
-Responsibilities:
-
-• Coordinating Release effort amongst various teams (Development, QA, Testing, and Business Analysis) in geographically separated environment.
-
-• Worked with subversion and implemented branching strategy suitable for agile/scrum development in fast paced engineering environment.
-
-• Wrote build.xml for applications that use Ant for builds respectively
-
-• Integrated Subversion for automating builds with Jenkins and Configured slaves in Jenkins for appropriate release builds in windows server.
-
-• Built end to end CI/CD Pipelines in Jenkins to retrieve code, compile applications, perform tests and push build artifacts to Nexus.
-
-• Works with release coordinate to determine an appropriate build schedule and then initiates the build and packaging process and deployments into development environments.
-
-• Created all scheduler and data back-up jobs using Python/Perl/Bash/Cron/SCP/SSH/FTP
-
-• Developed Perl Python, and Bash script to do data verification between Mysql and Oracle databases as part of database migration.
-
-• Developed scripts in PLSQL and Python to ingest API data from internal web servers
-
-• Estimated existing JIRA instance and resolved performance issues and created Jira work streams according to project prerequisites
-
-• Created users on Active Directory, synced the users on Jira and assigned groups.
-
-• Efficiently performed the task of resolving conflicts while merging in Subversion with the J2EE development background.
-
-• Wrote Perl scripts on Linux and IBM AIX servers for WebSphere application deployments and deployed the archives to WebSphere Application Servers.
-
-• Involved in Migration activities from IBM ClearCase to SVN to enhance the build process.
-
-• Used ClearQuest for tracking bugs and issues. Also, partially administered it by designing custom workflows.
-
-• Create/Maintain custom build scripts in Java/Perl. Develop Rational ClearQuest schemas and tailored the tools with custom Perl and batch scripts
-
-• Taking an active part preceding over Software Configuration Management Meetings by suggesting branching strategies and best practices to promote Parallel development and Agile development practices
-
-Environment: Java/J2EE, Ant, Maven, Subversion, Git, Jenkins, AWS, Chef, Puppet, LAMP stack, Docker, Shell Script, Linux.
-Education
-
-B.E in Engineering
-Osmania University
-/resumes/account/register?dest=%2Fresumes%2Fadv%2Fsignup%2Fr%2F78a9206c1feeec54&from=passport
-/resumes/account/login?dest=%2Fr%2F78a9206c1feeec54
-/resumes/account/register?dest=/r/78a9206c1feeec54
-javascript:void0
-
-    20,  
- . .com/
-
-
-CNCF Kubernetes Organization
-
-    to Present
-
-Code contributor to Kubernetes and KOPS.
-/resumes/account/register?dest=%2Fresumes%2Fadv%2Fsignup%2Fr%2F68a8ce5d6c9fb067&from=passport
-/resumes/account/login?dest=%2Fr%2F68a8ce5d6c9fb067
-/resumes/account/register?dest=/r/68a8ce5d6c9fb067
-javascript:void0
-
-    7,  
- . .com/
  and mount points for NFS support;
 
 • Management of user accounts, files and directory permissions, and securing UNIX systems to match industry best practices;
@@ -116,9 +28,9 @@ Systems Support
 
 • Performed basic system monitoring, verified the integrity and availability of all hardware, server resources, systems and key processes, reviewed system and application logs, and verified completion;
 
-• Monitored system performance &amp; tuned I/O, memory
+• Monitored system performance &amp; tuned I memory
 
-• Performed backup/restore operations
+• Performed backup operations
 
 • Maintaining appropriate file and system security, monitoring and controlling system access, changing permission, ownership of files and directories, maintaining passwords, assigning special privileges to selected users and controlling file access, monitoring status of process to increase system efficiency, scheduling system related cron jobs.
 
@@ -152,7 +64,7 @@ APACHE (4 years)
 ORACLE (4 years)
 Additional Information
 
-• Operating Systems: RHEL 3/4/5/6, Ubuntu, CentOS and Fedora
+• Operating Systems: RHEL 3 Ubuntu, CentOS and Fedora
 
 • Software: MS Office, ESX 4.x, 5.x, Tomcat, Web/ Application Server, Apache, Oracle.
 
@@ -164,11 +76,11 @@ Additional Information
 
 • Structured query language
 
-• NFS, SSH, Apache, DNS, Nagios, TCP/IP and TCP DUMP, LDAP
+• NFS, SSH, Apache, DNS, Nagios, TCP and TCP DUMP, LDAP
 
 Summary of Qualification:
 
-Possess over 4 years of experience managing server infrastructural operations across multiple platforms. Effectively plan, install, configure and optimize IT infrastructure to consistently achieve high availability and performance. Specializes in Unix/Linux System Administration and support of various applications on a multi-server environment, with great command line expertise in multiple flavors: Red Hat Enterprise Linux, Red Hat Fedora and Centos. Among my expertise include;
+Possess over 4 years of experience managing server infrastructural operations across multiple platforms. Effectively plan, install, configure and optimize IT infrastructure to consistently achieve high availability and performance. Specializes in Unix System Administration and support of various applications on a multi-server environment, with great command line expertise in multiple flavors: Red Hat Enterprise Linux, Red Hat Fedora and Centos. Among my expertise include;
 
 • Installing, upgrading and configuring Linux Servers using Kick start
 
@@ -192,7 +104,7 @@ Possess over 4 years of experience managing server infrastructural operations ac
 
 • Experienced in RAID configuration for performance improvement and redundancy
 
-• NOC /Data Center experience.
+• NOC  Center experience.
 
 • Worked with Database administrators to tune kernel for Oracle installations.
 
@@ -215,13 +127,13 @@ Possess over 4 years of experience managing server infrastructural operations ac
 • A great team player with good inter-personal skills and able to relate to all manner of persons
 
 • Willingness to adopt and manage change and relocate anywhere.
-/resumes/account/register?dest=%2Fresumes%2Fadv%2Fsignup%2Fr%2F21c8c750410902e9&from=passport
-/resumes/account/login?dest=%2Fr%2F21c8c750410902e9/pdf
-/resumes/account/register?dest=/r/21c8c750410902e9
-javascript:void0
 
-    19,  
- . .com/
+
+
+
+
+
+
 , Disks management and File systems in Linux platform
 
 ➢ Experience installing and configuring UNIX server on the Solaris and centos platforms and introducing the server to the network
@@ -246,7 +158,7 @@ javascript:void0
 
 ➢ Install, configure, maintain and administer Linux / UNIX operating systems and components. Diagnosed and resolved problems associated with DNS, DHCP and network connectivity.
 
-Linux System/Database Administrator
+Linux System Administrator
 
 Linux System Administrator
 Soft Tech Cooperation Inc
@@ -359,16 +271,16 @@ Skills Summary:
 
 ➢ Databases: Oracle 11gR2, 11gR2 RAC, Oracle10g
 
-➢ Tools and Utilities: Export/Import, RMAN, Data Pump, WinScp, ASM, PUTTY,
+➢ Tools and Utilities: Export RMAN, Data Pump, WinScp, ASM, PUTTY,
 
 ➢ Operating Systems: UNIX, LINUX, SOLARIS, Windows Server
-/resumes/account/register?dest=%2Fresumes%2Fadv%2Fsignup%2Fr%2Fae1ee6f0b9d97c31&from=passport
-/resumes/account/login?dest=%2Fr%2Fae1ee6f0b9d97c31
-/resumes/account/register?dest=/r/ae1ee6f0b9d97c31
-javascript:void0
 
-    19,  
- . .com/
+
+
+
+
+
+
 
 
 Future Business Leaders of America
@@ -392,7 +304,7 @@ skills would be knowing how to work in a professional work space and how to
 
 write to business in a professional manner. I have gained these skills from being
 
-an officer in FBLA/DECA and being the Vp of Communications.
+an officer in FBLA and being the Vp of Communications.
 
 I also have learned great soft skills in professional verbal communication.
 
@@ -419,78 +331,13 @@ great meeting minutes notes. I can multitask well with being able to listen and
 write down important dates during a meeting and having them typed down for the
 
 other officers to see their tasks.
-/resumes/account/register?dest=%2Fresumes%2Fadv%2Fsignup%2Fr%2Fa97030b447b51220&from=passport
-/resumes/account/login?dest=%2Fr%2Fa97030b447b51220/pdf
-/resumes/account/register?dest=/r/a97030b447b51220
-javascript:void0
-
-    6,  
- . .com/
-, Volume 
 
 
-African American Task Group
 
-  to Present
 
-Asian Pacific Professional Network
 
-  to Present
 
-Connect1NG
 
-  to Present
-
-Generation to Generation
-
-  to Present
-
-greeNG
-
-  to Present
-
-Native American Caucus
-
-  to Present
-
-Northrop Grumman Womens International Network
-
-  to Present
-
-One Adelante
-
-  to Present
-
-Pride In Diversity Alliance
-
-  to Present
-
-Source for Parenting Resources, Opportunities, Understanding and Teamwork
-
-  to Present
-
-Veterans, Employees and Reservists Inspired to Act and Serve
-
-  to Present
-
-Victory Over Impairment & Challenge Enterprise
-
-  to Present
-
-Mobile Community of Practice
-
-  to Present
-
-Cloud Community of Practice
-
-  to Present
-/resumes/account/register?dest=%2Fresumes%2Fadv%2Fsignup%2Fr%2F74a577e3ccb8ae45&from=passport
-/resumes/account/login?dest=%2Fr%2F74a577e3ccb8ae45
-/resumes/account/register?dest=/r/74a577e3ccb8ae45
-javascript:void0
-
-    7,  
- . .com/
 , and permission for each groups and users.
 
 • Installed and configured Sudo for users to access the root privileges.
@@ -537,18 +384,18 @@ Web Services: AWS, Rackspace Cloud, Amazon S3, EC2, Redshift, elasticsearch
 
 Operating Systems: Windows, Red hat Linux, MAC OSX
 
-Protocols: TCP/IP, HTTP/HTTPS, SOAP, SMTP, REST
+Protocols: TCP HTTP SOAP, SMTP, REST
 
 Deployment Tools: Jenkins
 
 Tracking Tools: Bugzilla and JIRA
-/resumes/account/register?dest=%2Fresumes%2Fadv%2Fsignup%2Fr%2F6b97453d6d8b974c&from=passport
-/resumes/account/login?dest=%2Fr%2F6b97453d6d8b974c
-/resumes/account/register?dest=/r/6b97453d6d8b974c
-javascript:void0
 
-    15,  
- . .com/
+
+
+
+
+
+
 
 
 Upsilon Pi Epsilon
@@ -560,7 +407,7 @@ TECHNOLOGY SKILLS
 
 Systems
 
-• Linux/UNIX user: Arch, Debian/Ubuntu, Kali, CentOS/Fedora, and pfSense.
+• Linux user: Arch, Debian Kali, CentOS and pfSense.
 
 • Windows: NT4 through 10.
 
@@ -568,214 +415,14 @@ Systems
 
 Programming Languages
 
-• Working knowledge of C/C++ and Ruby. Exposure to JavaScript/Node.js, C#, Python, BASH, Java, SQL, Salesforce and Fortran.
-/resumes/account/register?dest=%2Fresumes%2Fadv%2Fsignup%2Fr%2F5264ebfe8788c9ac&from=passport
-/resumes/account/login?dest=%2Fr%2F5264ebfe8788c9ac
-/resumes/account/register?dest=/r/5264ebfe8788c9ac
-javascript:void0
+• Working knowledge of C and Ruby. Exposure to JavaScript C#, Python, BASH, Java, SQL, Salesforce and Fortran.
 
-    4,  
- . .com/
- and Logical Volumes, extended logical volumes for the system growth needs using Logical Volume Manager (LVM).
 
-• Installed and configured Solaris 10/9 with SunOS version 5.9/5.8 with iPlanet Directory server, Resource manager, Solaris volume manager, Multipath I/O, IPMP and extended file attributes features.
 
-• Installation, Configuration and troubleshooting of system security applications like SUDO, SSH, Power Broker and eTrust.
 
-Willing to   Anywhere
- 
 
-Linux Engineer
-OCLC
--
-Columbus, OH
--
 
-December   to Present
 
-Responsibilities:
-
-• RedHat Satellite Minor Version Update from 6.2.11 to 6.2.13, Migration of RedHat Satellite 6.2.13 from RHEL 6.9 TO RHEL 7.4, Registering to Red hat Subscription Management (RHSM), Add necessary subscriptions, Review existing content Host Registrations, Register New Content hosts, selecting Repositories, setting Sync time, Freezing &amp; Publishing New Versions of REPO Data, Refreshing Subscription Manager on Hosts, Security Errata and patch Maintenance of new and existing Servers, Resolving any dependencies, Linux Red Hat Subscription Manager maintenance and local repo setup
-
-• Performing Patch Management through Ansible. Wrote Playbooks, modules as required.
-
-• Managed/Configured RedHat Satellite server patch management system
-
-• Performing LDAP account management.
-
-• Queried and managed software packages with Red Hat Package Manager (RPM) in the system, and wrote RPM spec files.
-
-• Responsible for data management using Red hat and CentOS utilities for archiving, compression backup and restore.
-
-• Responsible for installation, configuration, network security and overall maintenance of Sun Red Hat and Linux Red Hat Servers
-
-• Created system security supporting multi-tier software delivery system by utilizing Active Directory and Kerbero.
-
-• Wrote new security policies for Saline and maintained it for enhanced access control; performed debugging on SELinux issues.
-
-• Supporting system users and troubleshooting system issues. Document solutions for future reference.
-
-• Participating in root-cause analysis of recurring issues, system backup and security setup.
-
-Environment: RedHat Enterprise Linux /6.9 &amp; 7.4, RedHat Satellite 6.2.13, VMware ESXi, Ansible, Open LDAP.
-
-Linux/Unix Engineer
-AutoZone Inc
--
-Memphis, TN
--
-
-    to November  
-
-Responsibilities:
-
-• Maintain a secure hosting environment with latest certified Prism-CMS software, security patches, and software updates and upgrades to database, and application tiers.
-
-• Activities includes user administration; startup and shutdown scripts; crontabs, file system maintenance, backup scripting and automation using Perl, shell scripting (bash, ksh) for Red Hat Linux systems.
-
-• Implementation and administration of VMware ESXi 4.x, 5.x, vCenter for running Redhat Linux, windows Servers on Production and Development.
-
-• Administration of 1000 + RHEL 5.x, 6.2 and 6.3 servers which includes installation, testing, tuning, upgrading and loading patches, troubleshooting both physical and virtual server issues.
-
-• Involved in meetings with Dev managers to Create, manage and maintain the SCM Plan, standards, and procedures
-
-• Create templates, cloning Linux Virtual Machines and migrating servers between ESXi hosts.
-
-• Configured and maintained LINUX Logical Volume Manager (LVM).
-
-• Effective use of LVM disk Management tool to Create, extend Shrink the Logical volumes, File Systems on RHEL.
-
-• Creation of Volumes and file systems on SAN disks using Redhat LVM and VERITAS Volume Manager.
-
-• Activities include user administration, startup and shutdown scripts, crontabs, file system maintenance and backup scripting and automation using shell scripting (BASH, KSH) and Perl for RedHat Linux systems
-
-• Provide support for JBoss 5.x and apache 2.0 application for an operation related to installation and configuration.
-
-• Draft shell scripts for automated installations and to extract logs.
-
-• Work with storage team and application team to ensure the storage allocation and design is done at initial construction time.
-
-• Work with Database administrators to tune kernel for Oracle installations on Linux.
-
-• Perform Veritas Net backup troubleshooting using remote tools and commands.
-
-• Monitor the systems CPU, memory, IDE/SCSI disks, disk controllers, RAID, RAID controllers, file systems, and network parameters using NAGIOS system monitoring tools and BMC performance management tools.
-
-• Integrate more than 500 Linux servers to authenticate using Windows Active Directory using Winbind and Samba.
-
-• Manage DNS for external and internal domain &amp; Send mail Relay Server for outgoing mails.
-
-• Prepare servers for Oracle RAC installation which includes tuning the kernel, agent installation, adding NAS storage on 2, 3, 4 node clusters.
-
-• Design Firewall rules for new servers to establish communication with application, Oracle 10g servers.
-
-• Responsible for managing the Puppet Automation tool including installation, deployment, trouble shooting and updating.
-
-• Set up network environments using TCP/IP, NIS, NFS, DNS, SNMP agents, DHCP and Proxy.
-
-• Work with engineering team to resolve tickets related to engineering issues like firewall change requests.
-
-• Install/troubleshoot AUTOSYS to schedule application jobs.
-
-• Generate detailed documents and reports on issues and solutions for future reference.
-
-Linux/Unix Administrator/Devops Engineer
-Metropolitan Utilities District
--
-Omaha, NE
--
-
-    to    
-
-Responsibilities:
-
-• Linux Support - RHEL Satellite 6.1.8 setup, Red hat Subscription Management (RHSM), Review existing content Host Registrations, Register New Content hosts, selecting Repositories, setting Sync time, Freezing &amp; Publishing New Versions of REPO Data, Refreshing Subscription Manager on Hosts, Security Errata and patch Maintenance of new and existing Servers, Resolving any dependencies, Troubleshooting any errors during Patching, Logical Volume Management (LVM), Common Unix Print Server (CUPS), OpenSSH Secure Shell (SSH), Name Service Switch (nsswitch), Samba file server (CIFS) &amp; Setting up Monitoring using Nagios xi.
-
-• Linux Red Hat Subscription Manager maintenance and local repo setup
-
-• Register RHEL 5 &amp; 6 hosts to Red Hat network using subscription manager
-
-• Performed Patching and upgrades (release), on stand-alone servers (using single user mode), and live upgrade of servers in production and Linux using YUM update / RPM manager from repository or Redhat subscription management service (RHSM).
-
-• Automated the front-ends platform into highly scalable, consistent, repeatable infrastructure using high degree of automation using Chef, Jenkins, and Cloud Formation.
-
-Implemented Continuous Integration (CI) using Jenkins, Git from scratch.
-
-• Implemented &amp; maintained the branching and build/release strategies utilizing GIT and STASH.
-
-• Responsible for designing and deploying Source Code Management (SCM) process and procedures.
-
-• Managed/Configured Redhat Satellite server patch management system
-
-• Integrated GIT into Jenkins to automate the code check-out process.
-
-• Responsible for design and maintenance of the GIT Repositories, views, and the access control strategies.
-
-• Configured and maintained Jenkins to implement the CI process and integrated the tool with Ant and Maven to schedule the builds.
-
-• For every release collected the code from Perforce and Deployed on QA, and Production Servers using Apache Ant and Unix Shell scripts.
-
-• Carried Deployments and builds on various environments using continuous integration tool Jenkins.
-
-• Maintained build related scripts developed in shell for Maven builds. Created and modified build configuration files including POM.xml.
-
-• Managed the software configurations using Puppet, Dashboard and Puppet DB for configuration management to existing infrastructure.
-
-• Expert in User Management and Plugin Management for Jenkins.
-
-• Configured kickstart server and updating/applying patches to the servers using Redhat Satellite server.
-
-• Worked on Puppet and Chef Configuration management tools.
-
-• Create puppet modules to manage configurations and implemented them on agents.
-
-• Creating new groups in RedHat Satellite server and adding servers to configured groups
-
-• Performed SCM compliance reviews on configuration items to be issued to testing and production environment.
-
-• Designed and implemented GIT metadata including elements, labels, attributes, triggers and hyperlinks.
-
-• Managing and fixing Inactive, Out of date, Ungrouped and Duplicate systems in RedHat Satellite
-
-• Red Hat Satellite for patching, scheduling jobs and other tasks
-
-• Wrote and Maintained SCM policies and processes.
-
-• Updating patches to keep servers updated against bugs present in the operating system using Red Hat Satellite Server, yum, etc.
-
-• Update Maven scripts to use Artifactory repo instead of local repositories.
-
-• Installed and configured GIT and GITHUB. Implemented pre and post hooks in GIT.
-
-• Implemented and maintained the branching and build/release strategies utilizing GIT.
-
-• Build servers using Kick Start, Red Hat Satellite Server, and VSphere Client.
-
-• Worked with Red Hat Satellite Server which is used to push changes across various servers simultaneously.
-
-• Patching close to 150+ RHEL Servers from 6.5/7 to 6.8 across Sandbox, Dev, Base, QA, Pre-Prod &amp; Production environments.
-
-• Work with VCOPS, vSphere and VMWare ESX taking care of the virtual machines that run Linux.
-
-• Worked on variety of Linux platforms Red Hat Linux 5/6 &amp; Solaris which includes installation, configuring and maintenance of applications on this environment.
-
-• Used Logical Volume Manager for the management of Volumes including creation of physical and logical volumes on Linux
-
-• Worked on User administration setup, maintaining account, Monitor system performance.
-
-Environment: Redhat Enterprise Linux 4.x/5.x/6.1, Solaris 8/ 9/10, Tivoli Storage Manager, VMware ESX5, Tivoli Net backup, and Websphere, Subversion, GIT, GITHUB, Jenkins, Maven, Puppet, ANT, Nagios, Docker, Selenium, windows 2008 R2 &amp; 2008 servers, Windows 2003, IIS 7.0 &amp; 7.5, HPC7000 &amp; C6000.
-
-Linux/Unix Administrator/ Devops Engineer
-Huntington National Bank
--
-Columbus, OH
--
-
-    to    
-
-Responsibilities:
-
-• Support the Business Data analysis team in analyzing user credentials data, subsequently creating Roles, Identity and Resources 
  and mount points for NFS support;
 
 * Management of user accounts, files and directory permissions, and securing UNIX systems to match industry best practices;
@@ -820,13 +467,13 @@ problems;
 
 server resources, systems and key processes, reviewed system and application logs, and verified completion;
 
-* Monitored server and application performance &amp; ruined I/O, memory
+* Monitored server and application performance &amp; ruined I memory
 
 * Installation of SSH and configuring of keys based authentication
 
 * Installation and configuration of MySQL and Apache
 
-* Performed backup/restore operations using tar, cpio, dd, ufsdump, ufsrestore
+* Performed backup operations using tar, cpio, dd, ufsdump, ufsrestore
 
 * Maintaining appropriate file and system security, monitoring and controlling system access,
 
@@ -866,11 +513,11 @@ NFS (7 years)
 APACHE (5 years)
 Additional Information
 
-Over 6 years of IT industry experience with Unix/Linux System Administration and Support of various
+Over 6 years of IT industry experience with Unix System Administration and Support of various
 
 applications on a multi-server environment, I have specialized in working with command line in
 
-UNIX/Linux systems and an expert in this area. I have a Master skill in Red Hat Enterprise Linux and
+UNIX systems and an expert in this area. I have a Master skill in Red Hat Enterprise Linux and
 
 have also worked with other Linux distributions like RedHat Fedora and CentOs. Amongst my expertise
 
@@ -924,7 +571,7 @@ problem prevention, detection and resolution.
 
 * Experienced in RAID configuration for performance improvement and redundancy
 
-* NOC /Data Center experience. Have had access to various CoLos &amp; Data Centers and have the
+* NOC  Center experience. Have had access to various CoLos &amp; Data Centers and have the
 
 opportunity to troubleshoot servers at these locations.
 
@@ -974,7 +621,7 @@ enthusiasm
 
 Technical Proficiency and Expertise:
 
-* Operating Systems: RHEL 3/4/5/6, CentOS, Ubuntu and Fedora
+* Operating Systems: RHEL 3 CentOS, Ubuntu and Fedora
 
 * Hardware: HP ProLiant, Blade servers, Dell […] R420, […] R810, R710, R610
 
@@ -984,34 +631,34 @@ PE 2970, PE 2980, PE M10 Sun T2000, T5120 T5420, V490
 
 Server, Apache, Oracle.
 
-* Servers/Services: NFS, SSH, Telnet, Apache, DNS, Nslookup, Netstat, Nagios, TCP/IP and
+* Servers NFS, SSH, Telnet, Apache, DNS, Nslookup, Netstat, Nagios, TCP and
 
 TCPDUMP, LDAP
 
 * VI Editor, gedit, and emac
-/resumes/account/register?dest=%2Fresumes%2Fadv%2Fsignup%2Fr%2Feddf9027d5d72321&from=passport
-/resumes/account/login?dest=%2Fr%2Feddf9027d5d72321/pdf
-/resumes/account/register?dest=/r/eddf9027d5d72321
-javascript:void0
 
-    10,  
- . .com/
+
+
+
+
+
+
 
 
 Member and Presenter at Charleston Java Users Group (CJUG)
 
   2010 to   2012
 
-Presented at the BSides Charleston (4/2012) Security Conference on Developing Applications Using Distributed Authentication Methods (OAuth, OpenId, SAML 2.0)
+Presented at the BSides Charleston (4 Security Conference on Developing Applications Using Distributed Authentication Methods (OAuth, OpenId, SAML 2.0)
 Additional Information
 
 - Technical Reviewer for Packt Publishing's book “PHP and Scriptaculous”
 
 - Technical Reviewer for Packt Publishing's book “Groovy for Domain-Specific Languages”
-/resumes/account/register?dest=%2Fresumes%2Fadv%2Fsignup%2Fr%2F251b71a533aa58e1&from=passport
-/resumes/account/login?dest=%2Fr%2F251b71a533aa58e1/pdf
-/resumes/account/register?dest=/r/251b71a533aa58e1
-javascript:void0
 
-    11,  
- . .com/
+
+
+
+
+
+
