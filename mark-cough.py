@@ -110,6 +110,9 @@ def pack_it_in(data, counter_max):
     '''
     for item in indeed_sections:
         newtext = []
+        with open('data/ROLES.pickle', 'rb') as f:
+            roles = pickle.load(f)
+
         with open('data/{}.pickle'.format(item), 'rb') as f:
             readytext = pickle.load(f)
         #print(readytext[0])
@@ -117,8 +120,14 @@ def pack_it_in(data, counter_max):
         mk = markovgen.Markov(readytext)
         counter = 1
         while counter < counter_max:
-            line = '<br>' + mk.generate_markov_text()
-            newtext.append(line)
+            mkroles = markovgen.Markov(roles)
+            newrole = mkroles.generate_markov_text()
+            if item == 'Work Experience':
+                roleline = '<h3 style="margin:5px 0 5px 0;">{}</h3>'.format(newrole)
+            else:
+                 roleline = ''
+            line = mk.generate_markov_text() + '<br>'
+            newtext.append(roleline+line)
             counter = counter + 1
         data[item] = ' '.join(newtext)
         if args.verbose:
@@ -127,19 +136,14 @@ def pack_it_in(data, counter_max):
 
 
 def gen_text(data, name, email):
-    with open('data/ROLES.pickle', 'rb') as f:
-        roles = pickle.load(f)
-    mkroles = markovgen.Markov(roles)
-    newrole = mkroles.generate_markov_text()
+
     with open('fresh_resume.html', 'w') as f:
         f.write('<!DOCTYPE html><head><style>h2 { text-decoration: underline; } body {font-family: '+args.font+'}'+cssdefault+'</style></head><body>')
         f.write('<div id="wrapper" style="text-align: center;"><div style="display:inline-block; margin-right:15px;"><h1>'+name+'</h1></div><div style="display:inline-block"><h2>'+email+'</h2></div></div>')
         for k, v in data.items():
-            f.write('<h2>{}</h2>'.format(k))
+            f.write('<h2 style="margin:0 0 10px 0;">{}</h2>'.format(k))
             # add markov new role from roles pickle above
-            if k == 'Work Experience':
-                f.write('<p>{}</p>'.format(newrole))
-            f.write('<p>{}</p>'.format(v))
+            f.write('<span>{}</span>'.format(v))
         if args.group:
             f.write('<h2>Groups</h2>')
             f.write('<p>{}</p>'.format(args.group))
