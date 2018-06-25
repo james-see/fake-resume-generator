@@ -5,7 +5,7 @@ For FUN! Use at your own risk. No warranties, no exceptions.
 
 Try this:
 
-`python3 mark-cough.py -e 'waldensilverman@gmail.com' -n "Walden Silverman" -c 4 --font Times-p`
+`python3 mark-cough.py -e 'waldensilverman@gmail.com' -n "Walden Silverman" -c 4 --font Times -p`
 
 Current -h:
 
