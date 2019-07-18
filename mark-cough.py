@@ -25,12 +25,12 @@ cssdefault = """@media print {
 }
 """
 standard_sections = [
-    'system', 
-    'server', 
-    'tool', 
-    'skill', 
-    'project', 
-    'responsibilities', 
+    'system',
+    'server',
+    'tool',
+    'skill',
+    'project',
+    'responsibilities',
     'objective',
     'location',
     'language',
@@ -58,7 +58,7 @@ standard_sections = [
     'knowledge',
     'library',
     'design'
-    ]
+]
 
 indeed_sections = [
     'Work Experience',
@@ -77,18 +77,32 @@ pickles = [
 resumeparts = dict()
 
 # arguments handler
-parser = argparse.ArgumentParser(description="Process documents to make them generative")
+parser = argparse.ArgumentParser(
+    description="Process documents to make them generative")
 parser.add_argument("-v", "--verbose", help="increase output verbosity",
                     action="store_true")
-parser.add_argument("-s", "--silent", help="silent running server mode, no output to screen",
+parser.add_argument("-s", "--silent",
+                    help="silent running server mode, no output to screen",
                     action="store_true")
-parser.add_argument("-f", "--folder", help="folder location", default="resumes")
-parser.add_argument("-c", "--countermax", help="max number of lines for markov to write", default=3, type=int)
-parser.add_argument("-n", "--namer", help="Full name to use for top of resume", default="Joe Smith")
-parser.add_argument("-e", "--emailer", help="email to use for contact info for resume", default="joe.smith@blackhole.sun" )
-parser.add_argument("--font", help="font-selector either Times, Georgia, or Courier", default='monospace')
-parser.add_argument("-g", "--group", help="add custom Group affiliation section")
-parser.add_argument("-p", "--pdf", help="Generate a PDF in addition to the html", action="store_true")
+parser.add_argument(
+    "-f", "--folder", help="folder location", default="resumes")
+parser.add_argument("-c", "--countermax",
+                    help="max number of lines for markov to write",
+                    default=3, type=int)
+parser.add_argument(
+    "-n", "--namer", help="Full name to use for top of resume",
+    default="Joe Smith")
+parser.add_argument("-e", "--emailer",
+                    help="email to use for contact info for resume",
+                    default="joe.smith@blackhole.sun")
+parser.add_argument(
+    "--font", help="font-selector either Times, Georgia, or Courier",
+    default='monospace')
+parser.add_argument(
+    "-g", "--group", help="add custom Group affiliation section")
+parser.add_argument(
+    "-p", "--pdf", help="Generate a PDF in addition to the html",
+    action="store_true")
 args = parser.parse_args()
 if args.verbose and not args.silent:
     print("verbosity turned on")
@@ -115,21 +129,25 @@ def pack_it_in(data, counter_max):
 
         with open('data/{}.pickle'.format(item), 'rb') as f:
             readytext = pickle.load(f)
-        #print(readytext[0])
-        #exit()
+        # print(readytext[0])
+        # exit()
         mk = markovgen.Markov(readytext)
         counter = 1
         while counter < counter_max:
             mkroles = markovgen.Markov(roles)
             newrole = mkroles.generate_markov_text()
             if item == 'Work Experience':
-                roleline = '<h3 style="margin:5px 0 5px 0;">{}</h3>'.format(newrole)
+                roleline = '<h3 style="margin:5px 0 5px 0;">{}</h3>'.format(
+                    newrole)
             else:
-                 roleline = ''
+                roleline = ''
             line = mk.generate_markov_text() + '<br>'
             newtext.append(roleline+line)
             counter = counter + 1
         data[item] = ' '.join(newtext)
+        if data[item].startswith('and'):
+            data[item] = ' '.join(newtext)[3:]
+        # data[item] = data[item].capitalize()
         if args.verbose:
             print(data[item])
     return data
@@ -138,8 +156,10 @@ def pack_it_in(data, counter_max):
 def gen_text(data, name, email):
 
     with open('fresh_resume.html', 'w') as f:
-        f.write('<!DOCTYPE html><head><style>h2 { text-decoration: underline; } body {font-family: '+args.font+'}'+cssdefault+'</style></head><body>')
-        f.write('<div id="wrapper" style="text-align: center;"><div style="display:inline-block; margin-right:15px;"><h1>'+name+'</h1></div><div style="display:inline-block"><h2>'+email+'</h2></div></div>')
+        f.write('<!DOCTYPE html><head><style>h2 { text-decoration: underline; } body {font-family: ' +
+                args.font+'}'+cssdefault+'</style></head><body>')
+        f.write('<div id="wrapper" style="text-align: center;"><div style="display:inline-block; margin-right:15px;"><h1>' +
+                name+'</h1></div><div style="display:inline-block"><h2>'+email+'</h2></div></div>')
         for k, v in data.items():
             f.write('<h2 style="margin:0 0 10px 0;">{}</h2>'.format(k))
             # add markov new role from roles pickle above
@@ -149,9 +169,23 @@ def gen_text(data, name, email):
             f.write('<p>{}</p>'.format(args.group))
         f.write('</body></html>')
     return
+
+
+def get_random_name():
+    import random
+    first = random.choice(open('data/first-names.txt').readlines())
+    last = random.choice(open('data/last-names.txt').readlines())
+    return first + last
+
+
 def get_name():
-    name = input('What name do you want to use? ')
-    email = input('What email do you want to use? ')
+    name = input('What name do you want to use? (r fo random): ')
+    if name == 'r':
+        import random
+        name = get_random_name()
+        email = f"{name}{random.choice([1,2,3,4,5,6])}@gmail.com"
+    else:
+        email = input('What email do you want to use?: ')
     return name, email
 
 
@@ -161,8 +195,8 @@ def convertHtmlToPdf(sourceHtml, outputFilename):
 
     # convert HTML to PDF
     pisaStatus = pisa.CreatePDF(
-            sourceHtml,                # the HTML to convert
-            dest=resultFile)           # file handle to recieve result
+        sourceHtml,                # the HTML to convert
+        dest=resultFile)           # file handle to recieve result
 
     # close output file
     resultFile.close()                 # close output file
@@ -176,14 +210,16 @@ def main():
         name, email = get_name()
     else:
         name, email = args.namer, args.emailer
-    resumedict = get_resume_parts() # load up the dict with the right keys
-    alldata = pack_it_in(resumedict, args.countermax) # load up the keys with items
+    resumedict = get_resume_parts()  # load up the dict with the right keys
+    # load up the keys with items
+    alldata = pack_it_in(resumedict, args.countermax)
     gen_text(alldata, name, email)
     if args.pdf:
         with open('fresh_resume.html', 'r') as f:
             htmldata = f.read()
         convertHtmlToPdf(htmldata, 'fresh_resume.pdf')
 # main
+
 
 if __name__ == "__main__":
     main()

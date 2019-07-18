@@ -1,4 +1,5 @@
-numpy==1.14.0
-requests==2.20.0
-beautifulsoup4==4.6.0
-markovgen==0.5
+numpy
+requests
+beautifulsoup4
+markovgen
+xhtml2pdf
