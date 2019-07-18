@@ -1,5 +1,5 @@
 # fake-resume-generator
-For FUN! Use at your own risk. No warranties, no exceptions. 
+For FUN! Use at your own risk. No warranties, no exceptions.
 
 Licensed under the [WTFPL](http://www.wtfpl.net/). Have fun.
 
@@ -7,11 +7,18 @@ Licensed under the [WTFPL](http://www.wtfpl.net/). Have fun.
 
 Try this:
 
+`python3 mark-cough.py -c 6 --font Times -p`
+Or this:
+
 `python3 mark-cough.py -e 'waldensilverman@gmail.com' -n "Walden Silverman" -c 4 --font Times -p`
+
+### Pro tip
+
+You can just put in 'r' during the name input and it will randomize the email address and name for you.
 
 Current -h:
 
-```
+```python3
 usage: mark-cough.py [-h] [-v] [-s] [-f FOLDER] [-c COUNTERMAX] [-n NAMER]
                      [-e EMAILER] [--font FONT] [-g GROUP] [-p]
 
@@ -34,4 +41,4 @@ optional arguments:
                         add custom Group affiliation section
   -p, --pdf             Generate a PDF in addition to the html
   ```
-  
+

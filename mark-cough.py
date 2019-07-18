@@ -158,8 +158,7 @@ def gen_text(data, name, email):
     with open('fresh_resume.html', 'w') as f:
         f.write('<!DOCTYPE html><head><style>h2 { text-decoration: underline; } body {font-family: ' +
                 args.font+'}'+cssdefault+'</style></head><body>')
-        f.write('<div id="wrapper" style="text-align: center;"><div style="display:inline-block; margin-right:15px;"><h1>' +
-                name+'</h1></div><div style="display:inline-block"><h2>'+email+'</h2></div></div>')
+        f.write(f'<div id="wrapper" style="text-align: center;"><div style="display:inline-block; margin-right:15px;"><h1>{name}</h1></div><div style="display:inline-block"><h2>{email}</h2></div></div>')
         for k, v in data.items():
             f.write('<h2 style="margin:0 0 10px 0;">{}</h2>'.format(k))
             # add markov new role from roles pickle above
@@ -175,7 +174,7 @@ def get_random_name():
     import random
     first = random.choice(open('data/first-names.txt').readlines())
     last = random.choice(open('data/last-names.txt').readlines())
-    return first + last
+    return f"{first.replace(' ', '')}{last.replace(' ', '')}"
 
 
 def get_name():
@@ -183,7 +182,7 @@ def get_name():
     if name == 'r':
         import random
         name = get_random_name()
-        email = f"{name}{random.choice([1,2,3,4,5,6])}@gmail.com"
+        email = f"{name.replace(' ', '').lower()}{random.choice([1,2,3,4,5,6])}@gmail.com"
     else:
         email = input('What email do you want to use?: ')
     return name, email
