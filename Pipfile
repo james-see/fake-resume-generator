@@ -8,11 +8,11 @@ pylint = "*"
 flake8 = "*"
 
 [packages]
+Pillow = ">=6.2.2"
 numpy = "*"
 requests = "*"
 beautifulsoup4 = "*"
 markovgen = "*"
 xhtml2pdf = "*"
-
 [requires]
 python_version = "3.7"
